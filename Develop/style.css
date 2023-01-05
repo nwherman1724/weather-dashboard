@@ -5,6 +5,7 @@ body {
 
 main {
   display: flex;
+  margin-left: 5px;
 }
 
 .left-bar {
