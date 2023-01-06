@@ -12,7 +12,7 @@
 
 HTML backbone (x)
 CSS Layout (x)
-API Connection
+API Connection (x)
 API Use
 
 ## Description
