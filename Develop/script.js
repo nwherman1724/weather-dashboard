@@ -58,11 +58,13 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=42.1167&lon=-86.4542
           const dateFormat = new Date((data.list[2].dt) * 1000);
           date1.textContent = dateFormat.toDateString();
         
-
           const icon1 = document.getElementById('icon1');
 
-          let iconCode2 = data.list[2].weather[0].icon;
-          var day1Icon = 'http://openweathermap.org/img/w/' + iconCode2 + '.png'
+          // if(icon1){
+          //   icon1.remove(weatherIconDay1)
+          // }
+          let iconCode1 = data.list[2].weather[0].icon;
+          var day1Icon = 'http://openweathermap.org/img/w/' + iconCode1 + '.png'
           var weatherIconDay1 = document.createElement('img');
           weatherIconDay1.setAttribute('src', day1Icon)
           icon1.append(weatherIconDay1);
@@ -82,8 +84,8 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=42.1167&lon=-86.4542
 
           const icon2 = document.getElementById('icon2');
 
-          let iconCode3 = data.list[10].weather[0].icon;
-          var day2Icon = 'http://openweathermap.org/img/w/' + iconCode3 + '.png'
+          let iconCode2 = data.list[10].weather[0].icon;
+          var day2Icon = 'http://openweathermap.org/img/w/' + iconCode2 + '.png'
           var weatherIconDay2 = document.createElement('img');
           weatherIconDay2.setAttribute('src', day2Icon)
           icon2.append(weatherIconDay2);
@@ -103,8 +105,8 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=42.1167&lon=-86.4542
 
           const icon3 = document.getElementById('icon3');
 
-          let iconCode4 = data.list[18].weather[0].icon;
-          var day3Icon = 'http://openweathermap.org/img/w/' + iconCode4 + '.png'
+          let iconCode3 = data.list[18].weather[0].icon;
+          var day3Icon = 'http://openweathermap.org/img/w/' + iconCode3 + '.png'
           var weatherIconDay3 = document.createElement('img');
           weatherIconDay3.setAttribute('src', day3Icon)
           icon3.append(weatherIconDay3);
@@ -124,8 +126,8 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=42.1167&lon=-86.4542
 
           const icon4 = document.getElementById('icon4');
 
-          let iconCode5 = data.list[26].weather[0].icon;
-          var day4Icon = 'http://openweathermap.org/img/w/' + iconCode5 + '.png'
+          let iconCode4 = data.list[26].weather[0].icon;
+          var day4Icon = 'http://openweathermap.org/img/w/' + iconCode4 + '.png'
           var weatherIconDay4 = document.createElement('img');
           weatherIconDay4.setAttribute('src', day4Icon)
           icon4.append(weatherIconDay4);
@@ -145,8 +147,8 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=42.1167&lon=-86.4542
 
           const icon5 = document.getElementById('icon5');
 
-          let iconCode6 = data.list[34].weather[0].icon;
-          var day5Icon = 'http://openweathermap.org/img/w/' + iconCode6 + '.png'
+          let iconCode5 = data.list[34].weather[0].icon;
+          var day5Icon = 'http://openweathermap.org/img/w/' + iconCode5 + '.png'
           var weatherIconDay5 = document.createElement('img');
           weatherIconDay5.setAttribute('src', day5Icon)
           icon5.append(weatherIconDay5);
