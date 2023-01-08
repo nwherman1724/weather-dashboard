@@ -56,8 +56,7 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=42.1167&lon=-86.4542
         
           const date1 = document.getElementById('date1')
           const dateFormat = new Date((data.list[2].dt) * 1000);
-          dateFormat.toDateString();
-          date1.textContent = dateFormat;
+          date1.textContent = dateFormat.toDateString();
         
 
           const icon1 = document.getElementById('icon1');
@@ -79,8 +78,7 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=42.1167&lon=-86.4542
 
           const date2 = document.getElementById('date2')
           const dateFormat2 = new Date((data.list[10].dt) * 1000);
-          dateFormat2.toDateString();
-          date2.textContent = dateFormat2;
+          date2.textContent = dateFormat2.toDateString();
 
           const icon2 = document.getElementById('icon2');
 
@@ -101,8 +99,7 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=42.1167&lon=-86.4542
 
           const date3 = document.getElementById('date3')
           const dateFormat3 = new Date((data.list[18].dt) * 1000);
-          dateFormat3.toDateString();
-          date3.textContent = dateFormat3;
+          date3.textContent = dateFormat3.toDateString();
 
           const icon3 = document.getElementById('icon3');
 
@@ -123,8 +120,7 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=42.1167&lon=-86.4542
 
           const date4 = document.getElementById('date4')
           const dateFormat4 = new Date((data.list[26].dt) * 1000);
-          dateFormat4.toDateString();
-          date4.textContent = dateFormat4;
+          date4.textContent = dateFormat4.toDateString();
 
           const icon4 = document.getElementById('icon4');
 
@@ -145,8 +141,7 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=42.1167&lon=-86.4542
 
           const date5 = document.getElementById('date5')
           const dateFormat5 = new Date((data.list[34].dt) * 1000);
-          dateFormat5.toDateString();
-          date5.textContent = dateFormat5;
+          date5.textContent = dateFormat5.toDateString();
 
           const icon5 = document.getElementById('icon5');
 
