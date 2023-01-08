@@ -29,7 +29,8 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=42.1167&lon=-86.4542
 
       console.log(data.weather[0].icon)
       const cityEl = document.getElementById('cityName');
-      let icon = 'http://openweathermap.org/img/w/`${data.weather[0].icon}`.png'
+      let iconCode = data.weather[0].icon
+      let icon = 'http://openweathermap.org/img/w/' + iconCode + '.png'
       var weatherIcon = document.createElement('img');
       weatherIcon.setAttribute('src', icon);
       weatherIcon.setAttribute('class','weatherImg');
