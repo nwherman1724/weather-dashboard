@@ -12,15 +12,22 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=42.1167&lon=-86.4542
 
     let city = document.querySelector('.city').value;
 
-    console.log(city);
-
   fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=16c3d00c60dcdcff5c5a0a91a5169a6a&units=imperial`)
     .then((response) => response.json())
     .then((data) => console.log(data));
+
+  localStorage.setItem('searchedCity', city);
+
+  let savedCity = localStorage.getItem('searchedCity');
+
+  let list = document.querySelector('#searchLog');
+  
+  let p = document.createElement("p")
+  
+  list.append(p);
+    p.textContent = savedCity;
+
+  //localStorage.setItem('list',list.value)
   }
 
   clickSearch.addEventListener('click', search);
-
-  clickSearch.addEventListener('click', () => {
-    
-  });
