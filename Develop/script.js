@@ -26,8 +26,17 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=42.1167&lon=-86.4542
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=16c3d00c60dcdcff5c5a0a91a5169a6a&units=imperial`)
     .then((response) => response.json())
     .then((data) => {
+
+      console.log(data.weather[0].icon)
+
+      let icon = 'http://openweathermap.org/img/w/${data.weather[0].icon}.png'
+      var weatherIcon = document.createElement('img');
+      weatherIcon.setAttribute('src', icon);
+      //weatherIcon.setAttribute('class', weatherImg);
+      cityEl.append(weatherIcon);
+
       const cityEl = document.getElementById('cityName');
-      cityEl.textContent = `${data.name}` + " " + "(" + dayjs().format('DD/MM/YYYY') + ")" + " " + `${data.weather.icon}`;
+      cityEl.textContent = `${data.name}` + " " + "(" + dayjs().format('DD/MM/YYYY') + ")" + " " + `${data.weather[0].icon}`;
       const tempEl = document.getElementById('temp');
       tempEl.textContent = "Temp: " + `${data.main.temp}` + " F";
 
