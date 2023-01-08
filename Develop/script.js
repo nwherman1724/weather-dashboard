@@ -28,14 +28,15 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=42.1167&lon=-86.4542
     .then((data) => {
 
       console.log(data.weather[0].icon)
-
-      let icon = 'http://openweathermap.org/img/w/${data.weather[0].icon}.png'
+      const cityEl = document.getElementById('cityName');
+      let icon = 'http://openweathermap.org/img/w/`${data.weather[0].icon}`.png'
       var weatherIcon = document.createElement('img');
       weatherIcon.setAttribute('src', icon);
-      //weatherIcon.setAttribute('class', weatherImg);
+      weatherIcon.setAttribute('class','weatherImg');
+      weatherIcon.setAttribute('alt', 'weather icon');
       cityEl.append(weatherIcon);
 
-      const cityEl = document.getElementById('cityName');
+      
       cityEl.textContent = `${data.name}` + " " + "(" + dayjs().format('DD/MM/YYYY') + ")" + " " + `${data.weather[0].icon}`;
       const tempEl = document.getElementById('temp');
       tempEl.textContent = "Temp: " + `${data.main.temp}` + " F";
