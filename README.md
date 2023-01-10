@@ -47,7 +47,7 @@ THEN I am again presented with current and future conditions for that city
 
 The following animation demonstrates the application functionality:
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/project-tracker-demo.gif)
+![A user clicks on slots on the color-coded calendar and edits the events.](./assets/dasgboard.gif)
 
 ## Credits
 
