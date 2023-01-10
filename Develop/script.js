@@ -18,7 +18,7 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=42.1167&lon=-86.4542
   
     let list = document.querySelector('#searchLog');
     
-    let p = document.createElement("p")
+    let p = document.createElement("a")
     
     list.append(p);
       p.textContent = savedCity;
@@ -170,3 +170,4 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=42.1167&lon=-86.4542
   }
 
   clickSearch.addEventListener('click', search);
+  
