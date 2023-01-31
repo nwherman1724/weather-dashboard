@@ -8,13 +8,6 @@
 - Screenshots
 - Credits
 
-## TODO
-
-HTML backbone (x)
-CSS Layout (x)
-API Connection (x)
-API Use
-
 ## Description
 
 This is the sixth Module challenge in the MSU Full-Stack coding bootcamp. It will exercise knowledge of HTML, CSS, JavaScript, Git/Github, and third-party APIs. The objective of this project is to create a weather dashboard that can search cities, display todays weather, and display a 5 day forecast. The user story and acceptance criteria for the project have their own sections below.
